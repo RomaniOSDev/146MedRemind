@@ -6,7 +6,7 @@ workflows:
           - app_store_credentials
         vars:
           XCODE_WORKSPACE: "146MedRemind.xcworkspace"
-          XCODE_SCHEME: "145Multi146MedRemindSport"
+          XCODE_SCHEME: "146MedRemind"
           BUNDLE_ID: "com.nat.p1llc73d0s3tr5ck"
           APP_STORE_APP_ID: 6756367614
         xcode: latest
