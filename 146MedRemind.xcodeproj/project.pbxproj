@@ -3,33 +3,91 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 60;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		3003F4992FBCEF520058EE20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3003F48F2FBCEF520058EE20 /* Assets.xcassets */; };
+		3003F49B2FBCEF520058EE20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3003F4932FBCEF520058EE20 /* LaunchScreen.storyboard */; };
+		3003F49C2FBCEF520058EE20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3003F4952FBCEF520058EE20 /* Main.storyboard */; };
+		3003F49D2FBCEF520058EE20 /* DomainModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3003F4612FBCEF520058EE20 /* DomainModels.swift */; };
+		3003F49E2FBCEF520058EE20 /* MedNotificationSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3003F4632FBCEF520058EE20 /* MedNotificationSetup.swift */; };
+		3003F49F2FBCEF520058EE20 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3003F4652FBCEF520058EE20 /* AppRouter.swift */; };
+		3003F4A02FBCEF520058EE20 /* MedRouteCipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3003F4662FBCEF520058EE20 /* MedRouteCipher.swift */; };
+		3003F4A12FBCEF520058EE20 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3003F4672FBCEF520058EE20 /* PersistenceManager.swift */; };
+		3003F4A22FBCEF520058EE20 /* PrivacyWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3003F4682FBCEF520058EE20 /* PrivacyWebView.swift */; };
+		3003F4A32FBCEF520058EE20 /* SaveService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3003F4692FBCEF520058EE20 /* SaveService.swift */; };
+		3003F4A42FBCEF520058EE20 /* StartMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3003F46A2FBCEF520058EE20 /* StartMainView.swift */; };
+		3003F4A52FBCEF520058EE20 /* Color+MedPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3003F46C2FBCEF520058EE20 /* Color+MedPalette.swift */; };
+		3003F4A62FBCEF520058EE20 /* MedAppExternalLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3003F46D2FBCEF520058EE20 /* MedAppExternalLink.swift */; };
+		3003F4A72FBCEF520058EE20 /* MedDateFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3003F46E2FBCEF520058EE20 /* MedDateFormatting.swift */; };
+		3003F4A82FBCEF520058EE20 /* MedVisualStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3003F46F2FBCEF520058EE20 /* MedVisualStyle.swift */; };
+		3003F4A92FBCEF520058EE20 /* MedRemindViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3003F4712FBCEF520058EE20 /* MedRemindViewModel.swift */; };
+		3003F4AA2FBCEF520058EE20 /* AddMedicationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3003F4732FBCEF520058EE20 /* AddMedicationView.swift */; };
+		3003F4AB2FBCEF520058EE20 /* DayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3003F4752FBCEF520058EE20 /* DayCell.swift */; };
+		3003F4AC2FBCEF520058EE20 /* DayChip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3003F4762FBCEF520058EE20 /* DayChip.swift */; };
+		3003F4AD2FBCEF520058EE20 /* DoseCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3003F4772FBCEF520058EE20 /* DoseCard.swift */; };
+		3003F4AE2FBCEF520058EE20 /* DoseDetailSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3003F4782FBCEF520058EE20 /* DoseDetailSheet.swift */; };
+		3003F4AF2FBCEF520058EE20 /* HistoryDoseCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3003F4792FBCEF520058EE20 /* HistoryDoseCard.swift */; };
+		3003F4B02FBCEF520058EE20 /* MedicationCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3003F47A2FBCEF520058EE20 /* MedicationCard.swift */; };
+		3003F4B12FBCEF520058EE20 /* StatCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3003F47B2FBCEF520058EE20 /* StatCard.swift */; };
+		3003F4B22FBCEF520058EE20 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3003F47D2FBCEF520058EE20 /* HistoryView.swift */; };
+		3003F4B32FBCEF520058EE20 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3003F47F2FBCEF520058EE20 /* HomeView.swift */; };
+		3003F4B42FBCEF520058EE20 /* MedMainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3003F4812FBCEF520058EE20 /* MedMainTabView.swift */; };
+		3003F4B52FBCEF520058EE20 /* MedicationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3003F4832FBCEF520058EE20 /* MedicationsView.swift */; };
+		3003F4B62FBCEF520058EE20 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3003F4852FBCEF520058EE20 /* OnboardingView.swift */; };
+		3003F4B72FBCEF520058EE20 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3003F4872FBCEF520058EE20 /* SettingsView.swift */; };
+		3003F4B82FBCEF520058EE20 /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3003F4892FBCEF520058EE20 /* StatsView.swift */; };
+		3003F4B92FBCEF520058EE20 /* TodayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3003F48B2FBCEF520058EE20 /* TodayView.swift */; };
+		3003F4BA2FBCEF520058EE20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3003F48E2FBCEF520058EE20 /* AppDelegate.swift */; };
+		3003F4BB2FBCEF520058EE20 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3003F4902FBCEF520058EE20 /* ContentView.swift */; };
+		3003F4BC2FBCEF520058EE20 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3003F4962FBCEF520058EE20 /* SceneDelegate.swift */; };
+		3003F4BD2FBCEF520058EE20 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3003F4972FBCEF520058EE20 /* ViewController.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		3003F4612FBCEF520058EE20 /* DomainModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainModels.swift; sourceTree = "<group>"; };
+		3003F4632FBCEF520058EE20 /* MedNotificationSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedNotificationSetup.swift; sourceTree = "<group>"; };
+		3003F4652FBCEF520058EE20 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		3003F4662FBCEF520058EE20 /* MedRouteCipher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedRouteCipher.swift; sourceTree = "<group>"; };
+		3003F4672FBCEF520058EE20 /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
+		3003F4682FBCEF520058EE20 /* PrivacyWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyWebView.swift; sourceTree = "<group>"; };
+		3003F4692FBCEF520058EE20 /* SaveService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveService.swift; sourceTree = "<group>"; };
+		3003F46A2FBCEF520058EE20 /* StartMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartMainView.swift; sourceTree = "<group>"; };
+		3003F46C2FBCEF520058EE20 /* Color+MedPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+MedPalette.swift"; sourceTree = "<group>"; };
+		3003F46D2FBCEF520058EE20 /* MedAppExternalLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedAppExternalLink.swift; sourceTree = "<group>"; };
+		3003F46E2FBCEF520058EE20 /* MedDateFormatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedDateFormatting.swift; sourceTree = "<group>"; };
+		3003F46F2FBCEF520058EE20 /* MedVisualStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedVisualStyle.swift; sourceTree = "<group>"; };
+		3003F4712FBCEF520058EE20 /* MedRemindViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedRemindViewModel.swift; sourceTree = "<group>"; };
+		3003F4732FBCEF520058EE20 /* AddMedicationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMedicationView.swift; sourceTree = "<group>"; };
+		3003F4752FBCEF520058EE20 /* DayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayCell.swift; sourceTree = "<group>"; };
+		3003F4762FBCEF520058EE20 /* DayChip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayChip.swift; sourceTree = "<group>"; };
+		3003F4772FBCEF520058EE20 /* DoseCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoseCard.swift; sourceTree = "<group>"; };
+		3003F4782FBCEF520058EE20 /* DoseDetailSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoseDetailSheet.swift; sourceTree = "<group>"; };
+		3003F4792FBCEF520058EE20 /* HistoryDoseCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryDoseCard.swift; sourceTree = "<group>"; };
+		3003F47A2FBCEF520058EE20 /* MedicationCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationCard.swift; sourceTree = "<group>"; };
+		3003F47B2FBCEF520058EE20 /* StatCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatCard.swift; sourceTree = "<group>"; };
+		3003F47D2FBCEF520058EE20 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		3003F47F2FBCEF520058EE20 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		3003F4812FBCEF520058EE20 /* MedMainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedMainTabView.swift; sourceTree = "<group>"; };
+		3003F4832FBCEF520058EE20 /* MedicationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationsView.swift; sourceTree = "<group>"; };
+		3003F4852FBCEF520058EE20 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		3003F4872FBCEF520058EE20 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		3003F4892FBCEF520058EE20 /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
+		3003F48B2FBCEF520058EE20 /* TodayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayView.swift; sourceTree = "<group>"; };
+		3003F48E2FBCEF520058EE20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3003F48F2FBCEF520058EE20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3003F4902FBCEF520058EE20 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3003F4912FBCEF520058EE20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3003F4922FBCEF520058EE20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3003F4942FBCEF520058EE20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3003F4962FBCEF520058EE20 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3003F4972FBCEF520058EE20 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		30B02ACD2F9F499700DE834E /* 146MedRemind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 146MedRemind.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3EF3B7F620742FC5B6FA277 /* Pods_146MedRemind.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_146MedRemind.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D560E6F75771B87B1DE30A25 /* Pods-146MedRemind.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-146MedRemind.release.xcconfig"; path = "Target Support Files/Pods-146MedRemind/Pods-146MedRemind.release.xcconfig"; sourceTree = "<group>"; };
+		E8FC939F739A2C0349DC9D15 /* Pods-146MedRemind.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-146MedRemind.debug.xcconfig"; path = "Target Support Files/Pods-146MedRemind/Pods-146MedRemind.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		30B02ADF2F9F499900DE834E /* Exceptions for "146MedRemind" folder in "146MedRemind" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = 30B02ACC2F9F499700DE834E /* 146MedRemind */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		30B02ACF2F9F499700DE834E /* 146MedRemind */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				30B02ADF2F9F499900DE834E /* Exceptions for "146MedRemind" folder in "146MedRemind" target */,
-			);
-			path = 146MedRemind;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		30B02ACA2F9F499700DE834E /* Frameworks */ = {
@@ -42,11 +100,185 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3003F4622FBCEF520058EE20 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3003F4612FBCEF520058EE20 /* DomainModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3003F4642FBCEF520058EE20 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				3003F4632FBCEF520058EE20 /* MedNotificationSetup.swift */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		3003F46B2FBCEF520058EE20 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				3003F4652FBCEF520058EE20 /* AppRouter.swift */,
+				3003F4662FBCEF520058EE20 /* MedRouteCipher.swift */,
+				3003F4672FBCEF520058EE20 /* PersistenceManager.swift */,
+				3003F4682FBCEF520058EE20 /* PrivacyWebView.swift */,
+				3003F4692FBCEF520058EE20 /* SaveService.swift */,
+				3003F46A2FBCEF520058EE20 /* StartMainView.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		3003F4702FBCEF520058EE20 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				3003F46C2FBCEF520058EE20 /* Color+MedPalette.swift */,
+				3003F46D2FBCEF520058EE20 /* MedAppExternalLink.swift */,
+				3003F46E2FBCEF520058EE20 /* MedDateFormatting.swift */,
+				3003F46F2FBCEF520058EE20 /* MedVisualStyle.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		3003F4722FBCEF520058EE20 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				3003F4712FBCEF520058EE20 /* MedRemindViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		3003F4742FBCEF520058EE20 /* AddMedication */ = {
+			isa = PBXGroup;
+			children = (
+				3003F4732FBCEF520058EE20 /* AddMedicationView.swift */,
+			);
+			path = AddMedication;
+			sourceTree = "<group>";
+		};
+		3003F47C2FBCEF520058EE20 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				3003F4752FBCEF520058EE20 /* DayCell.swift */,
+				3003F4762FBCEF520058EE20 /* DayChip.swift */,
+				3003F4772FBCEF520058EE20 /* DoseCard.swift */,
+				3003F4782FBCEF520058EE20 /* DoseDetailSheet.swift */,
+				3003F4792FBCEF520058EE20 /* HistoryDoseCard.swift */,
+				3003F47A2FBCEF520058EE20 /* MedicationCard.swift */,
+				3003F47B2FBCEF520058EE20 /* StatCard.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		3003F47E2FBCEF520058EE20 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				3003F47D2FBCEF520058EE20 /* HistoryView.swift */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		3003F4802FBCEF520058EE20 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				3003F47F2FBCEF520058EE20 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		3003F4822FBCEF520058EE20 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				3003F4812FBCEF520058EE20 /* MedMainTabView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		3003F4842FBCEF520058EE20 /* Medications */ = {
+			isa = PBXGroup;
+			children = (
+				3003F4832FBCEF520058EE20 /* MedicationsView.swift */,
+			);
+			path = Medications;
+			sourceTree = "<group>";
+		};
+		3003F4862FBCEF520058EE20 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				3003F4852FBCEF520058EE20 /* OnboardingView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		3003F4882FBCEF520058EE20 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				3003F4872FBCEF520058EE20 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		3003F48A2FBCEF520058EE20 /* Stats */ = {
+			isa = PBXGroup;
+			children = (
+				3003F4892FBCEF520058EE20 /* StatsView.swift */,
+			);
+			path = Stats;
+			sourceTree = "<group>";
+		};
+		3003F48C2FBCEF520058EE20 /* Today */ = {
+			isa = PBXGroup;
+			children = (
+				3003F48B2FBCEF520058EE20 /* TodayView.swift */,
+			);
+			path = Today;
+			sourceTree = "<group>";
+		};
+		3003F48D2FBCEF520058EE20 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3003F4742FBCEF520058EE20 /* AddMedication */,
+				3003F47C2FBCEF520058EE20 /* Components */,
+				3003F47E2FBCEF520058EE20 /* History */,
+				3003F4802FBCEF520058EE20 /* Home */,
+				3003F4822FBCEF520058EE20 /* Main */,
+				3003F4842FBCEF520058EE20 /* Medications */,
+				3003F4862FBCEF520058EE20 /* Onboarding */,
+				3003F4882FBCEF520058EE20 /* Settings */,
+				3003F48A2FBCEF520058EE20 /* Stats */,
+				3003F48C2FBCEF520058EE20 /* Today */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3003F4982FBCEF520058EE20 /* 146MedRemind */ = {
+			isa = PBXGroup;
+			children = (
+				3003F4622FBCEF520058EE20 /* Models */,
+				3003F4642FBCEF520058EE20 /* Notifications */,
+				3003F46B2FBCEF520058EE20 /* Router */,
+				3003F4702FBCEF520058EE20 /* Utilities */,
+				3003F4722FBCEF520058EE20 /* ViewModels */,
+				3003F48D2FBCEF520058EE20 /* Views */,
+				3003F48E2FBCEF520058EE20 /* AppDelegate.swift */,
+				3003F48F2FBCEF520058EE20 /* Assets.xcassets */,
+				3003F4902FBCEF520058EE20 /* ContentView.swift */,
+				3003F4912FBCEF520058EE20 /* Info.plist */,
+				3003F4932FBCEF520058EE20 /* LaunchScreen.storyboard */,
+				3003F4952FBCEF520058EE20 /* Main.storyboard */,
+				3003F4962FBCEF520058EE20 /* SceneDelegate.swift */,
+				3003F4972FBCEF520058EE20 /* ViewController.swift */,
+			);
+			path = 146MedRemind;
+			sourceTree = "<group>";
+		};
 		30B02AC42F9F499700DE834E = {
 			isa = PBXGroup;
 			children = (
-				30B02ACF2F9F499700DE834E /* 146MedRemind */,
+				3003F4982FBCEF520058EE20 /* 146MedRemind */,
 				30B02ACE2F9F499700DE834E /* Products */,
+				93C72F30F7FD6941D8A13E4D /* Pods */,
+				4A7F8C7282261872021234B9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +290,23 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		4A7F8C7282261872021234B9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B3EF3B7F620742FC5B6FA277 /* Pods_146MedRemind.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		93C72F30F7FD6941D8A13E4D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E8FC939F739A2C0349DC9D15 /* Pods-146MedRemind.debug.xcconfig */,
+				D560E6F75771B87B1DE30A25 /* Pods-146MedRemind.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -65,6 +314,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 30B02AE02F9F499900DE834E /* Build configuration list for PBXNativeTarget "146MedRemind" */;
 			buildPhases = (
+				5450E441A40254D61977D6EA /* [CP] Check Pods Manifest.lock */,
 				30B02AC92F9F499700DE834E /* Sources */,
 				30B02ACA2F9F499700DE834E /* Frameworks */,
 				30B02ACB2F9F499700DE834E /* Resources */,
@@ -73,12 +323,7 @@
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				30B02ACF2F9F499700DE834E /* 146MedRemind */,
-			);
 			name = 146MedRemind;
-			packageProductDependencies = (
-			);
 			productName = 146MedRemind;
 			productReference = 30B02ACD2F9F499700DE834E /* 146MedRemind.app */;
 			productType = "com.apple.product-type.application";
@@ -99,6 +344,7 @@
 				};
 			};
 			buildConfigurationList = 30B02AC82F9F499700DE834E /* Build configuration list for PBXProject "146MedRemind" */;
+			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -106,8 +352,6 @@
 				Base,
 			);
 			mainGroup = 30B02AC42F9F499700DE834E;
-			minimizedProjectReferenceProxies = 1;
-			preferredProjectObjectVersion = 77;
 			productRefGroup = 30B02ACE2F9F499700DE834E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -122,24 +366,105 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3003F4992FBCEF520058EE20 /* Assets.xcassets in Resources */,
+				3003F49B2FBCEF520058EE20 /* LaunchScreen.storyboard in Resources */,
+				3003F49C2FBCEF520058EE20 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5450E441A40254D61977D6EA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-146MedRemind-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		30B02AC92F9F499700DE834E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3003F49D2FBCEF520058EE20 /* DomainModels.swift in Sources */,
+				3003F49E2FBCEF520058EE20 /* MedNotificationSetup.swift in Sources */,
+				3003F49F2FBCEF520058EE20 /* AppRouter.swift in Sources */,
+				3003F4A02FBCEF520058EE20 /* MedRouteCipher.swift in Sources */,
+				3003F4A12FBCEF520058EE20 /* PersistenceManager.swift in Sources */,
+				3003F4A22FBCEF520058EE20 /* PrivacyWebView.swift in Sources */,
+				3003F4A32FBCEF520058EE20 /* SaveService.swift in Sources */,
+				3003F4A42FBCEF520058EE20 /* StartMainView.swift in Sources */,
+				3003F4A52FBCEF520058EE20 /* Color+MedPalette.swift in Sources */,
+				3003F4A62FBCEF520058EE20 /* MedAppExternalLink.swift in Sources */,
+				3003F4A72FBCEF520058EE20 /* MedDateFormatting.swift in Sources */,
+				3003F4A82FBCEF520058EE20 /* MedVisualStyle.swift in Sources */,
+				3003F4A92FBCEF520058EE20 /* MedRemindViewModel.swift in Sources */,
+				3003F4AA2FBCEF520058EE20 /* AddMedicationView.swift in Sources */,
+				3003F4AB2FBCEF520058EE20 /* DayCell.swift in Sources */,
+				3003F4AC2FBCEF520058EE20 /* DayChip.swift in Sources */,
+				3003F4AD2FBCEF520058EE20 /* DoseCard.swift in Sources */,
+				3003F4AE2FBCEF520058EE20 /* DoseDetailSheet.swift in Sources */,
+				3003F4AF2FBCEF520058EE20 /* HistoryDoseCard.swift in Sources */,
+				3003F4B02FBCEF520058EE20 /* MedicationCard.swift in Sources */,
+				3003F4B12FBCEF520058EE20 /* StatCard.swift in Sources */,
+				3003F4B22FBCEF520058EE20 /* HistoryView.swift in Sources */,
+				3003F4B32FBCEF520058EE20 /* HomeView.swift in Sources */,
+				3003F4B42FBCEF520058EE20 /* MedMainTabView.swift in Sources */,
+				3003F4B52FBCEF520058EE20 /* MedicationsView.swift in Sources */,
+				3003F4B62FBCEF520058EE20 /* OnboardingView.swift in Sources */,
+				3003F4B72FBCEF520058EE20 /* SettingsView.swift in Sources */,
+				3003F4B82FBCEF520058EE20 /* StatsView.swift in Sources */,
+				3003F4B92FBCEF520058EE20 /* TodayView.swift in Sources */,
+				3003F4BA2FBCEF520058EE20 /* AppDelegate.swift in Sources */,
+				3003F4BB2FBCEF520058EE20 /* ContentView.swift in Sources */,
+				3003F4BC2FBCEF520058EE20 /* SceneDelegate.swift in Sources */,
+				3003F4BD2FBCEF520058EE20 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		3003F4932FBCEF520058EE20 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3003F4922FBCEF520058EE20 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		3003F4952FBCEF520058EE20 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3003F4942FBCEF520058EE20 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		30B02AE12F9F499900DE834E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8FC939F739A2C0349DC9D15 /* Pods-146MedRemind.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -147,30 +472,37 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = 146MedRemind/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "PillCue: Dose Track";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "home.-46MedRemind";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nat.p1llc73d0s3tr5ck;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		30B02AE22F9F499900DE834E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D560E6F75771B87B1DE30A25 /* Pods-146MedRemind.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -178,25 +510,31 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = 146MedRemind/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "PillCue: Dose Track";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "home.-46MedRemind";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nat.p1llc73d0s3tr5ck;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

@@ -2,35 +2,62 @@
 //  AppDelegate.swift
 //  146MedRemind
 //
-//  Created by Roman on 4/27/26.
-//
 
 import UIKit
+import UserNotifications
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        UNUserNotificationCenter.current().delegate = self
+        MedNotificationSetup.registerCategories()
         return true
     }
 
-    // MARK: UISceneSession Lifecycle
-
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
-        // Called when a new scene session is being created.
-        // Use this method to select a configuration to create the new scene with.
         return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
     }
 
     func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
-        // Called when the user discards a scene session.
-        // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
-        // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
-
-
 }
 
+extension AppDelegate: UNUserNotificationCenterDelegate {
+    func userNotificationCenter(
+        _ center: UNUserNotificationCenter,
+        didReceive response: UNNotificationResponse,
+        withCompletionHandler completionHandler: @escaping () -> Void
+    ) {
+        defer { completionHandler() }
+
+        let actionId = response.actionIdentifier
+        guard actionId == MedNotificationSetup.snooze10ActionId || actionId == MedNotificationSetup.snooze30ActionId else {
+            return
+        }
+
+        let delay: TimeInterval = actionId == MedNotificationSetup.snooze10ActionId ? 600 : 1800
+        let userInfo = response.notification.request.content.userInfo
+        guard
+            let mid = userInfo[MedNotificationSetup.userInfoMedicationIdKey] as? String,
+            let uuid = UUID(uuidString: mid),
+            let name = userInfo[MedNotificationSetup.userInfoMedicationNameKey] as? String
+        else {
+            return
+        }
+
+        MedNotificationSetup.scheduleSnoozeNotification(
+            medicationId: uuid,
+            medicationName: name,
+            delaySeconds: delay
+        )
+    }
+
+    func userNotificationCenter(
+        _ center: UNUserNotificationCenter,
+        willPresent notification: UNNotification,
+        withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void
+    ) {
+        completionHandler([.banner, .sound])
+    }
+}
